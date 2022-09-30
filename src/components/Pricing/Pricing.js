@@ -25,7 +25,10 @@ const Pricing = () => {
 
   return (
     <div>
-      <div className="grid grid-cols-3 my-12 gap-5">
+      <h1 className="mt-12 p-12 bg-slate-600 text-white font-semibold text-6xl">
+        Best Deal of the Town
+      </h1>
+      <div className="grid md:grid-cols-3 grid-cols-1 my-12 gap-5 container mx-auto ">
         {priceOptions.map((option) => (
           <Price key={option.id} option={option} />
         ))}
