@@ -1,10 +1,10 @@
 import "./App.css";
-import NavBar from "./NavBar";
+import NavBarReDesign from "./components/NavBarRedeisgn/NavBarReDesign";
 
 function App() {
   return (
     <div className="App">
-      <NavBar />
+      <NavBarReDesign />
     </div>
   );
 }
