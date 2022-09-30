@@ -33,16 +33,16 @@ const NavBar = () => {
     },
   ];
   return (
-    <nav>
-      <div onClick={() => setOpen(!open)}>
-        {open ? (
-          <XMarkIcon className="h-6 w-6" />
-        ) : (
-          <Bars3Icon className="h-6 w-6" />
-        )}
+    <nav className="bg-purple-200 w-full">
+      <div onClick={() => setOpen(!open)} className="h-6 w-6 md:hidden">
+        {open ? <XMarkIcon /> : <Bars3Icon />}
       </div>
-
-      <ul className="md:flex md:justify-center text-2xl">
+      {/* className={`bg-purple-200 md:flex w-full justify-center absolute md:static duration-500 ease-in ${open ? 'top-6' : 'top-[-120px]'}`} */}
+      <ul
+        className={`bg-purple-200 md:flex w-full justify-center absolute md:static duration-500 ease-in ${
+          open ? "top-6" : "top-[-120px]"
+        }`}
+      >
         {routes.map((route) => (
           <Link route={route} key={route.id} />
         ))}
