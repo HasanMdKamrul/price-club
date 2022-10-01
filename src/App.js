@@ -2,6 +2,7 @@ import "./App.css";
 import AssignmentMarks from "./components/AssignmentMarks/AssignmentMarks";
 import BarChartAssignment from "./components/BarChartAssignment/BarChartAssignment";
 import NavBarReDesign from "./components/NavBarRedeisgn/NavBarReDesign";
+import Phones from "./components/Phones/Phones";
 import Pricing from "./components/Pricing/Pricing";
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <Pricing />
       <AssignmentMarks />
       <BarChartAssignment />
+      <Phones />
     </div>
   );
 }
