@@ -31,6 +31,7 @@ const Phones = () => {
       <CartesianGrid strokeDasharray="3 3" />
       <Bar dataKey="price" color="black" />
       <XAxis dataKey="name" />
+
       <YAxis />
       <Tooltip></Tooltip>
     </BarChart>
